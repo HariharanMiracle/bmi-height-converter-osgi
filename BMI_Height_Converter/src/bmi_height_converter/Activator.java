@@ -14,6 +14,7 @@ public class Activator implements BundleActivator {
 	 * @see org.osgi.framework.BundleActivator#start(org.osgi.framework.BundleContext)
 	 */
 	public void start(BundleContext context) throws Exception {
+		//start function
 		System.out.println("BMI_Height_Converter => Start");
 		HeightService heightService = new HeightServiceImpl();
 		publishServiceRegistration = context.registerService(HeightService.class.getName(), heightService, null);
